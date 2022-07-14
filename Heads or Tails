@@ -5,8 +5,13 @@
 int main(){
   int heads = 0, tails = 0;
   int num;
+  char str[10];
 
   srand(time(NULL));
+  
+  printf("Who are you?\n> ");
+  scanf("%s", str);
+  printf("Hello, %s\n", str);
  
   printf("Tossing a coin...\n");
   
