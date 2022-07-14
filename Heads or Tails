@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+
+int main(){
+  int heads = 0, tails = 0;
+  int num;
+
+  srand(time(NULL));
+  
+  for(int i = 1 ; i <= 3 ; i++){
+    num = rand()%2;
+
+    if(num == 0){
+      printf("Round %d:Heads\n", i);
+      heads++;
+    }
+    else if(num == 1){
+      printf("Round %d:Tail\n", i);
+      tails++;
+    }
+  }
+  printf("Heads: %d, Tails: %d\n", heads, tails);
+  
+  returm 0;
+}
